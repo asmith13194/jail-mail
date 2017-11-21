@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Router } from 'react-router-dom';
@@ -10,6 +11,8 @@ import routes from './routes.jsx';
 import registerServiceWorker from './registerServiceWorker';
 import reducers from './reducers';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+axios.defaults.baseURL = process.env.REACT_APP_API
 
 const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 
