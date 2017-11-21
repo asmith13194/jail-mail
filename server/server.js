@@ -22,7 +22,12 @@ app.use(function(req, res, next) {
 
 app.use('/auth', auth);
 
-app.use('/', (req,res)=>{
+app.use('/environment', (req, res) => {
+  res.json(process.env)
+  res.send()
+})
+
+app.use('/', (req ,res)=>{
   res.sendStatus(404);
 });
 

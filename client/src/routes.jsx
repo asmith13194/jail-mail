@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import HomePage from './components/Home/Page.jsx';
 import NoMatch from './components/Legos/NoMatch.jsx';
 import LandingPage from './components/Landing/Page.jsx';
+import Environment from './components/Environment'
 import PrivateRoute from './components/Legos/PrivateRoute.jsx';
 import SystemSettings from './components/Settings/SystemSettings.jsx';
 import PrivacySettings from './components/Settings/PrivacySettings.jsx';
@@ -18,6 +19,8 @@ export default (
       <Route exact path={'/login'} component={LandingPage} />
 
       <Route exact path={'/signup'} component={LandingPage} />
+
+      <Route exact path={'/environment'} component={Environment} />
 
       <PrivateRoute path={'/home'} component={HomePage} />
 
