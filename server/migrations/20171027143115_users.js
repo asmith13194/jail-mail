@@ -11,5 +11,5 @@ exports.up = function(knex, Promise) {
 };
 
 exports.down = function(knex, Promise) {
-  return knex.schema.dropTable(process.env.DATABASE_URL);
+  return knex.schema.dropTable(process.env.DATABASE_NAME);
 };
