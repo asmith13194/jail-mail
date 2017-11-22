@@ -9,7 +9,7 @@ const {
   jwtSignMiddleWare,
   jwtVerifyMiddleWare,
   bcryptHashMiddleWare,
-  bcryptCompareMiddleWare, } = require('../authware.js')
+  bcryptCompareMiddleWare, } = require('../middleware/authware.js')
 const saltRounds = 10;
 
 router.post('/signup',
