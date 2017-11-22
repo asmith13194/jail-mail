@@ -1,6 +1,6 @@
 ## Setup
 
-### From the cli run the following commands replacing ... w/ database name for your project
+### From the cli run the following commands
 *  yarn install
 *  createdb jailmail
 *  createdb jailmail-test
