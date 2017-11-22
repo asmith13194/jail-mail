@@ -3,20 +3,20 @@ module.exports = {
   development: {
     client: 'pg',
     connection: {
-      database: process.env.DATABASE_URL || 'postmates',
+      database: process.env.DATABASE_NAME || 'jailmail',
     }
   },
 
   test: {
     client: 'pg',
     connection: {
-      database: process.env.DATABASE_URL_TEST,
+      database: process.env.DATABASE_NAME_TEST,
     }
   },
 
   production: {
     client: "pg",
-    connection: process.env.DATABASE_URL
+    connection: process.env.DATABASE_NAME
   }
 
 };
